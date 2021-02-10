@@ -38,6 +38,7 @@ const searchResult = drinks =>{
     document.getElementById('display-cocktails').style.display = "none";
     document.getElementById('search-field').value = "";
     document.getElementById('drinks-detail').innerHTML = "";
+    document.getElementById('error-msg').innerText = "";
     drinks.forEach(drink => {
         const displaySearch = document.getElementById('display-search');
         const drinkDiv = document.createElement('div');
